@@ -2870,13 +2870,133 @@ function updateRuneWordsVisible()
 <table class='head'>
     <tr>
         <td class='vatop column1'>
-            <span style='font-size:18px;'><i>Diablo 2</i> <a href='https://github.com/Michaelangel007/d2_cheat_sheet'>Cheat Sheet</a></span>
-            <span style='font-size:14px;'> by <i>Michaelangel007</i></span> <img alt='m007' src='pics/m007.png'> <i><a href='https://www.reddit.com/user/MysticReddit'>/u/MysticReddit</a></i>
+            <span style='font-size:18px;'><i>Diablo 2 Resurrected</i> <a href='https://github.com/SoulSeekkor/d2_cheat_sheet'>Cheat Sheet</a></span>
+            <span style='font-size:14px;'> by <i>SoulSeekkor</i></span>
 <button type='button' id='mono'                  onclick='onMono(this)       ;'>Mono</button>
 <button type='button' id='color'        disabled onclick='onColor(this)      ;'>Color</button>
 <button type='button' id='collapse_all'          onclick='onCollapseAll(this);'>Collapse</button>
             <br>
             <br>
+            
+<table class='head' id='table.sockcube'>
+    <tr class='gt gb'><th><span class='g'>Socketing (with Act 5 <a href='https://diablo2.diablowiki.net/Siege_on_Harrogath'>Larzuk</a>, <a href='http://classic.battle.net/diablo2exp/items/cube.shtml'>Cube</a>, or Ebug)</span><div class='collapse'><button value='table.sockcube' onclick='onCollapse(this);'>-</button></div></th></tr>
+    <tr><td class='tooltip k11'>Normal drops = max 3<span class='note'>*</span> sockets      (<span class='note'>*Cows</span> = 4 socket, <span class='note'>Larzuk</span> # sockets = ilvl &larr; mlvl &larr; alvl)</td></tr>
+    <tr><td class='tooltip k22'> nm    drops = max 4 sockets       (<span class='mf'>0</span> MF is best for finding bases)                           </td></tr>
+    <tr><td class='tooltip k11'>Hell   drops = max 6 sockets                                                                  </td></tr>
+    <tr><td class='tooltip k22'>Larzuk = max 1 socket to uniques, 1-6 sockets to white bases depending on ilvl and type       </td></tr>
+    <tr><td class='tooltip k11'>Tal + Thul + Perfect Topaz    + Normal Body Armor &rarr; Socketed Body Armor of same type          <span class='tool ttk'><span class='in'>Tal </span><img src='runes/tal.png'  /><span class='in'> + Thul </span><img src='runes/thul.png' /><span class='in'> + </span><img src='gems/topaz_perfect.png'   ></span></td></tr>
+    <tr><td class='tooltip k22'>Ral + Amn  + Perfect Amethyst + Normal Weapon     &rarr; Socketed Weapon     of same type          <span class='tool ttk'><span class='in'>Ral </span><img src='runes/ral.png'  /><span class='in'> + Amn  </span><img src='runes/amn.png'  /><span class='in'> + </span><img src='gems/amethyst_perfect.png'></span></td></tr>
+    <tr><td class='tooltip k11'>Ral + Thul + Perfect Sapphire + Normal Helm       &rarr; Socketed Helm       of same type          <span class='tool ttk'><span class='in'>Ral </span><img src='runes/ral.png'  /><span class='in'> + Thul </span><img src='runes/thul.png' /><span class='in'> + </span><img src='gems/sapphire_perfect.png'></span></td></tr>
+    <tr><td class='tooltip k22'>Tal + Amn  + Perfect Ruby     + Normal Shield     &rarr; Socketed Shield     of same type          <span class='tool ttk'><span class='in'>Tal </span><img src='runes/tal.png'  /><span class='in'> + Amn  </span><img src='runes/amn.png'  /><span class='in'> + </span><img src='gems/ruby_perfect.png'    ></span></td></tr>
+    <tr><td class='tooltip k11'>Hel + Scroll of Town Portal   + Any Socketed Item &rarr; Remove gems, runes, or jewels from sockets<span class='tool ttk'><span class='in'>Hel </span><img src='runes/hel.png'  /><span class='in'> + </span><img src='pics/scroll_town_portal.png'/></span                                 ></td></tr>
+</table>
+<br>
+<table class='head'>
+    <tr>
+        <td>
+            <table class='head' id='table.uprare'>
+                <tr class='raret rareb'><th><span class='rare'>Upping Rares</span><div class='collapse'><button value='table.uprare' onclick='onCollapse(this);'>-</button><div></th></tr>
+                <tr><td class='tooltip k11'>Ort + Amn  + Perfect Sapphire + Normal (Basic) Rare Weapon &rarr; Exceptional Rare Weapon<span class='tool ttk'><span class='in'>Ort </span><img alt='Ort' src='runes/ort.png'  /><span class='in'> + Amn  </span><img alt='Amn'  src='runes/amn.png'  /><span class='in'> + Perfect Sapphire </span><img alt='perfect sapphire' src='gems/sapphire_perfect.png'/></span></td></tr>
+                <tr><td class='tooltip k11'>Fal + Um   + Perfect Sapphire + Exceptional    Rare Weapon &rarr; Elite       Rare Weapon<span class='tool ttk'><span class='in'>Fal </span><img alt='Fal' src='runes/fal.png'  /><span class='in'> + Um   </span><img alt='Um'   src='runes/um.png'   /><span class='in'> + Perfect Sapphire </span><img alt='perfect sapphire' src='gems/sapphire_perfect.png'/></span></td></tr>
+                <tr><td class='tooltip k22'>Ral + Thul + Perfect Amethyst + Normal (Basic) Rare Armor  &rarr; Exceptional Rare Armor <span class='tool ttk'><span class='in'>Ral </span><img alt='Ral' src='runes/ral.png'  /><span class='in'> + Thul </span><img alt='Thul' src='runes/thul.png' /><span class='in'> + Perfect Amethyst </span><img alt='perfect amethyst' src='gems/amethyst_perfect.png'/></span></td></tr>
+                <tr><td class='tooltip k22'>Ko  + Pul  + Perfect Amethyst + Exceptional    Rare Armor  &rarr; Elite       Rare Armor <span class='tool ttk'><span class='in'>Ko  </span><img alt='Ko'  src='runes/ko.png'   /><span class='in'> + Pul  </span><img alt='Pul'  src='runes/pul.png'  /><span class='in'> + Perfect Amethyst </span><img alt='perfect amethyst' src='gems/amethyst_perfect.png'/></span></td></tr>
+            </table>
+            <br>
+            <table class='head' id='table.upunq'>
+                <tr class='unqt unqb'  ><th><span class='unq' >Upping Uniques</span><div class='collapse'><button value='table.upunq' onclick='onCollapse(this);'>-</button></div></th></tr>
+                <tr><td class='tooltip k11'>Ral + Sol   + Perfect Emerald + Normal      Unique Weapon &rarr;  Exceptional ver. Weapon<span class='tool ttk'><span class='in'>Ral </span><img src='runes/ral.png'  /><span class='in'> + Sol   </span><img alt='Sol'   src='runes/sol.png'  /><span class='in'> + Perfect Emerald </span><img alt='perfect emerald' src='gems/emerald_perfect.png'/><br></span></td></tr>
+                <tr><td class='tooltip k11'>Lum + Pul   + Perfect Emerald + Exceptional Unique Weapon &rarr;  Elite version of Weapon<span class='tool ttk'><span class='in'>Lum </span><img src='runes/lum.png'  /><span class='in'> + Pul   </span><img alt='Pul'   src='runes/pul.png'  /><span class='in'> + Perfect Emerald </span><img alt='perfect emerald' src='gems/emerald_perfect.png'/></span></td></tr>
+                <tr><td class='tooltip k22'>Tal + Shael + Perfect Diamond + Normal      Unique Armor  &rarr;  Exceptional ver. Armor <span class='tool ttk'><span class='in'>Tal </span><img src='runes/tal.png'  /><span class='in'> + Shael </span><img alt='Shael' src='runes/shael.png'/><span class='in'> + Perfect Diamond </span><img alt='perfect diamond' src='gems/diamond_perfect.png'/>
+
+<b>Belts</b>
+<span class='unq'>Goldwrap</span> (Heavy Belt), def 34-36
+
+<b>Body Armor</b>
+<span class='unq'>Twitchthroe</span> (Studded Leather), def 57-60, Str 27, Lev 16
+&rarr; (Trellised Armor), def 163-178, Str 61, Lev 30
+
+<b>Boots</b>
+<span class='unq'>Goblin Toe</span> (Light Plated Boots), Kick 8-16, Str 50, Lev 22
+&rarr; (Battle Boots) Kick 37-64, Str 95, Lev 30
+
+<span class='unq'>Hotspur</span> (Boots) &rarr; (Demonhide Boots)
+
+<b>Gloves</b>
+<span class='unq'>Bloodfist</span> (Heavy Gloves)
+<span class='unq'>Chance Guards</span> (Chain Gloves)
+<span class='unq'>Frostburn</span> (Gauntlets)
+<span class='unq'>Magefist</span> (Light Gauntlets)
+
+                </span></td></tr>
+                <tr><td class='tooltip k22'>Ko  + Lem   + Perfect Diamond + Exceptional Unique Armor  &rarr;  Elite version of Armor <span class='tool ttk'><span class='in'>Ko  </span><img src='runes/ko.png'   /><span class='in'> + Lem   </span><img alt='Lem'   src='runes/lem.png'  /><span class='in'> + Perfect Diamond </span><img alt='perfect diamond' src='gems/diamond_perfect.png'/>
+
+<b>Body Armor</b>
+<span class='unq'>Guardian Angel</span> (Templar Coat), def 770-825
+<span class='unq'>Shaftstop</span> (Mesh Armor), def 599-684
+<span class='unq'>Skin of the Vipermagi</span> (Serpentskin Armor), Def 279
+upped <span class='unq'>Twitchthroe</span> (Trellised Armor), def 163, Str 61, Lev 30
+&rarr; (Wire Fleece), def 410, Str 111, Lev 65
+
+<b>Boots</b>
+upped <span class='unq'>Goblin Toe</span> (Battle Boots), Kick 37-64
+&rarr; (Mirrored Boots) Kick 50-145, Str 163, Lev 72
+
+<span class='unq'>Gore Rider</span> (War Boots), Kick 39-80, Str 94, Lev 47
+&rarr; (Myrmidon Greaves), Kick 83-149, Str 156, Lev 72
+
+<span class='unq'>Infernostride</span> (Demonhide Boots) &rarr; (Scarabshell Boots)
+<span class='unq'>Waterwalk</span> (Sharkskin Boots) &rarr; (Scarabshell Boots)
+
+<b>Helms</b>
+Arreat's Face
+<span class='unq'>Crown of Thieves</span> (Grand Crown)
+<span class='unq'>Jalal's Mane</span> (Totemic Mask) [Druid]
+<span class='unq'>Kira's Guardian</span> (Tiara)
+<span class='unq'>Rockstopper</span> (Sallet)
+<span class='unq'>Vampire Gaze</span> (Grim Helm)
+
+<b>Shields</b>
+<span class='unq'>Herald of Zakarum</span> (Gilded Shield) [Paladin]
+<span class='unq'>Homunculus</span> (Hierophant Trophy) [Necromancer]
+                </span></td></tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<br>
+<table class='head'>
+    <tr>
+        <td class='vatop'>
+            <table id='table.pl1'>
+                <tr class='rt rb'><th      > Power Leveling<div class='collapse'><button value='table.pl1' onclick='onCollapse(this);'>-</button></div></th></tr>
+                <tr><td class='tooltip b11'> 1-15 Tristram runs     </td></tr>
+                <tr><td class='tooltip b22'>15-24 Tombs (Cows 21-24)</td></tr>
+                <tr><td class='tooltip b11'>   24 Ancients          </td></tr>
+                <tr><td class='tooltip b22'>25-40 Sanctuary/Baal    </td></tr>
+                <tr><td class='tooltip g11'>   40 Ancients       nm </td></tr>
+                <tr><td class='tooltip g22'>41-60 Sanctuary/Baal nm </td></tr>
+                <tr><td class='tooltip r11'>   60 Ancients     Hell </td></tr>
+                <tr><td class='tooltip r22'>61-99 Baal         Hell </td></tr>
+            </table>
+        </td>
+        <td class='vatop padd5'>
+            <table id='table.bestxp1'>
+                <tr class='gt gb'><th      >XP    I      II     III    IV     V<div class='collapse'><button value='table.bestxp1' onclick='onCollapse(this);'>-</button></div></th></tr>
+                <tr><td class='tooltip b22'>Norm   1-11  12-18  19-23  24-31  32-36</td></tr>
+                <tr><td class='tooltip g22'> nm   37-43  44-48  49-52  53-62   <span class='note'>skip</span></td></tr>
+                <tr><td class='tooltip r22'>Hell  63-73  74-80  81-83  83-94  95-99</td></tr>
+            </table>
+            <br>
+            <table id='table.bases4sword2'>
+                <tr class='bt bb'><th      >4os sword bases: ilvl 26-40<div class='collapse'><button value='table.bases4sword2' onclick='onCollapse(this);'>-</button></div></th></tr>
+                <tr><td class='tooltip b11'>Normal    Act 5  (<span class='note'>Crystal,   </span> </td></tr>
+                <tr><td class='tooltip b22'>Normal    Cows    <span class='note'> Broad,    </span> </td></tr>
+                <tr><td class='tooltip b11'>Nightmare Act 1   <span class='note'> Long, etc.</span>)</td></tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<br>
             <table class='head' style='min-width:730px' id='table.fcr'>
 <tr class='bt bb'        ><th><span class='b'>Faster Cast Rate (<span class='fcr'>FCR</span>)</span>                             <a href='https://www.youtube.com/watch?v=ivm5cFeJYSA'>Hidden</a> 86 <a href='https://www.diabloii.net/forums/threads/druid-fcr-action-frames-good-info-for-pvp-elementalists-i.794229/'>breakpoint</a> *<div class='collapse'><button value='table.fcr' onclick='onCollapse(this);'>-</button></div>
 <meta                       />Frames  23  22  21  20  19  18  17  16  15   14   13   12   11   10    9    8    7</th></tr>
@@ -2971,78 +3091,6 @@ function updateRuneWordsVisible()
                 </td></tr>
             </table>
             <br>
-            <table class='head'>
-                <tr>
-                    <td>
-                        <table class='head' id='table.uprare'>
-                            <tr class='raret rareb'><th><span class='rare'>Upping Rares</span><div class='collapse'><button value='table.uprare' onclick='onCollapse(this);'>-</button><div></th></tr>
-                            <tr><td class='tooltip k11'>Ort + Amn  + Perfect Sapphire + Normal (Basic) Rare Weapon &rarr; Exceptional Rare Weapon<span class='tool ttk'><span class='in'>Ort </span><img alt='Ort' src='runes/ort.png'  /><span class='in'> + Amn  </span><img alt='Amn'  src='runes/amn.png'  /><span class='in'> + Perfect Sapphire </span><img alt='perfect sapphire' src='gems/sapphire_perfect.png'/></span></td></tr>
-                            <tr><td class='tooltip k11'>Fal + Um   + Perfect Sapphire + Exceptional    Rare Weapon &rarr; Elite       Rare Weapon<span class='tool ttk'><span class='in'>Fal </span><img alt='Fal' src='runes/fal.png'  /><span class='in'> + Um   </span><img alt='Um'   src='runes/um.png'   /><span class='in'> + Perfect Sapphire </span><img alt='perfect sapphire' src='gems/sapphire_perfect.png'/></span></td></tr>
-                            <tr><td class='tooltip k22'>Ral + Thul + Perfect Amethyst + Normal (Basic) Rare Armor  &rarr; Exceptional Rare Armor <span class='tool ttk'><span class='in'>Ral </span><img alt='Ral' src='runes/ral.png'  /><span class='in'> + Thul </span><img alt='Thul' src='runes/thul.png' /><span class='in'> + Perfect Amethyst </span><img alt='perfect amethyst' src='gems/amethyst_perfect.png'/></span></td></tr>
-                            <tr><td class='tooltip k22'>Ko  + Pul  + Perfect Amethyst + Exceptional    Rare Armor  &rarr; Elite       Rare Armor <span class='tool ttk'><span class='in'>Ko  </span><img alt='Ko'  src='runes/ko.png'   /><span class='in'> + Pul  </span><img alt='Pul'  src='runes/pul.png'  /><span class='in'> + Perfect Amethyst </span><img alt='perfect amethyst' src='gems/amethyst_perfect.png'/></span></td></tr>
-                        </table>
-                        <br>
-                        <table class='head' id='table.upunq'>
-                            <tr class='unqt unqb'  ><th><span class='unq' >Upping Uniques</span><div class='collapse'><button value='table.upunq' onclick='onCollapse(this);'>-</button></div></th></tr>
-                            <tr><td class='tooltip k11'>Ral + Sol   + Perfect Emerald + Normal      Unique Weapon &rarr;  Exceptional ver. Weapon<span class='tool ttk'><span class='in'>Ral </span><img src='runes/ral.png'  /><span class='in'> + Sol   </span><img alt='Sol'   src='runes/sol.png'  /><span class='in'> + Perfect Emerald </span><img alt='perfect emerald' src='gems/emerald_perfect.png'/><br></span></td></tr>
-                            <tr><td class='tooltip k11'>Lum + Pul   + Perfect Emerald + Exceptional Unique Weapon &rarr;  Elite version of Weapon<span class='tool ttk'><span class='in'>Lum </span><img src='runes/lum.png'  /><span class='in'> + Pul   </span><img alt='Pul'   src='runes/pul.png'  /><span class='in'> + Perfect Emerald </span><img alt='perfect emerald' src='gems/emerald_perfect.png'/></span></td></tr>
-                            <tr><td class='tooltip k22'>Tal + Shael + Perfect Diamond + Normal      Unique Armor  &rarr;  Exceptional ver. Armor <span class='tool ttk'><span class='in'>Tal </span><img src='runes/tal.png'  /><span class='in'> + Shael </span><img alt='Shael' src='runes/shael.png'/><span class='in'> + Perfect Diamond </span><img alt='perfect diamond' src='gems/diamond_perfect.png'/>
-
-<b>Belts</b>
-<span class='unq'>Goldwrap</span> (Heavy Belt), def 34-36
-
-<b>Body Armor</b>
-<span class='unq'>Twitchthroe</span> (Studded Leather), def 57-60, Str 27, Lev 16
- &rarr; (Trellised Armor), def 163-178, Str 61, Lev 30
-
-<b>Boots</b>
-<span class='unq'>Goblin Toe</span> (Light Plated Boots), Kick 8-16, Str 50, Lev 22
- &rarr; (Battle Boots) Kick 37-64, Str 95, Lev 30
-
-<span class='unq'>Hotspur</span> (Boots) &rarr; (Demonhide Boots)
-
-<b>Gloves</b>
-<span class='unq'>Bloodfist</span> (Heavy Gloves)
-<span class='unq'>Chance Guards</span> (Chain Gloves)
-<span class='unq'>Frostburn</span> (Gauntlets)
-<span class='unq'>Magefist</span> (Light Gauntlets)
-
-                            </span></td></tr>
-                            <tr><td class='tooltip k22'>Ko  + Lem   + Perfect Diamond + Exceptional Unique Armor  &rarr;  Elite version of Armor <span class='tool ttk'><span class='in'>Ko  </span><img src='runes/ko.png'   /><span class='in'> + Lem   </span><img alt='Lem'   src='runes/lem.png'  /><span class='in'> + Perfect Diamond </span><img alt='perfect diamond' src='gems/diamond_perfect.png'/>
-
-<b>Body Armor</b>
-<span class='unq'>Guardian Angel</span> (Templar Coat), def 770-825
-<span class='unq'>Shaftstop</span> (Mesh Armor), def 599-684
-<span class='unq'>Skin of the Vipermagi</span> (Serpentskin Armor), Def 279
-upped <span class='unq'>Twitchthroe</span> (Trellised Armor), def 163, Str 61, Lev 30
- &rarr; (Wire Fleece), def 410, Str 111, Lev 65
-
-<b>Boots</b>
-upped <span class='unq'>Goblin Toe</span> (Battle Boots), Kick 37-64
- &rarr; (Mirrored Boots) Kick 50-145, Str 163, Lev 72
-
-<span class='unq'>Gore Rider</span> (War Boots), Kick 39-80, Str 94, Lev 47
- &rarr; (Myrmidon Greaves), Kick 83-149, Str 156, Lev 72
-
-<span class='unq'>Infernostride</span> (Demonhide Boots) &rarr; (Scarabshell Boots)
-<span class='unq'>Waterwalk</span> (Sharkskin Boots) &rarr; (Scarabshell Boots)
-
-<b>Helms</b>
-Arreat's Face
-<span class='unq'>Crown of Thieves</span> (Grand Crown)
-<span class='unq'>Jalal's Mane</span> (Totemic Mask) [Druid]
-<span class='unq'>Kira's Guardian</span> (Tiara)
-<span class='unq'>Rockstopper</span> (Sallet)
-<span class='unq'>Vampire Gaze</span> (Grim Helm)
-
-<b>Shields</b>
-<span class='unq'>Herald of Zakarum</span> (Gilded Shield) [Paladin]
-<span class='unq'>Homunculus</span> (Hierophant Trophy) [Necromancer]
-                            </span></td></tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
         </td>
         <td class='column2 ios-hidden desk-runes2'>
             <table class='head' id='table.runes2'>
@@ -3507,39 +3555,6 @@ for chests to drop this rune<br>
  Level Requirement: <span class='n'>69</span>
  <span class='farm'>Baal</span>: Hell
  </span></td></tr>
-            </table>
-            <br>
-            <table class='head ios-hidden'>
-                <tr>
-                    <td class='vatop'>
-                        <table id='table.pl1'>
-                            <tr class='rt rb'><th      > Power Leveling<div class='collapse'><button value='table.pl1' onclick='onCollapse(this);'>-</button></div></th></tr>
-                            <tr><td class='tooltip b11'> 1-15 Tristram runs     </td></tr>
-                            <tr><td class='tooltip b22'>15-24 Tombs (Cows 21-24)</td></tr>
-                            <tr><td class='tooltip b11'>   24 Ancients          </td></tr>
-                            <tr><td class='tooltip b22'>25-40 Sanctuary/Baal    </td></tr>
-                            <tr><td class='tooltip g11'>   40 Ancients       nm </td></tr>
-                            <tr><td class='tooltip g22'>41-60 Sanctuary/Baal nm </td></tr>
-                            <tr><td class='tooltip r11'>   60 Ancients     Hell </td></tr>
-                            <tr><td class='tooltip r22'>61-99 Baal         Hell </td></tr>
-                        </table>
-                    </td>
-                    <td class='vatop padd5'>
-                        <table id='table.bestxp1'>
-                            <tr class='gt gb'><th      >XP    I      II     III    IV     V<div class='collapse'><button value='table.bestxp1' onclick='onCollapse(this);'>-</button></div></th></tr>
-                            <tr><td class='tooltip b22'>Norm   1-11  12-18  19-23  24-31  32-36</td></tr>
-                            <tr><td class='tooltip g22'> nm   37-43  44-48  49-52  53-62   <span class='note'>skip</span></td></tr>
-                            <tr><td class='tooltip r22'>Hell  63-73  74-80  81-83  83-94  95-99</td></tr>
-                        </table>
-                        <br>
-                        <table id='table.bases4sword2'>
-                            <tr class='bt bb'><th      >4os sword bases: ilvl 26-40<div class='collapse'><button value='table.bases4sword2' onclick='onCollapse(this);'>-</button></div></th></tr>
-                            <tr><td class='tooltip b11'>Normal    Act 5  (<span class='note'>Crystal,   </span> </td></tr>
-                            <tr><td class='tooltip b22'>Normal    Cows    <span class='note'> Broad,    </span> </td></tr>
-                            <tr><td class='tooltip b11'>Nightmare Act 1   <span class='note'> Long, etc.</span>)</td></tr>
-                        </table>
-                    </td>
-                </tr>
             </table>
             <br>
             <table class='head'>
@@ -5192,19 +5207,6 @@ for chests to drop this rune<br>
     <tr class='rt rb'><th><a href='http://classic.battle.net/diablo2exp/items/cube.shtml'><span class='r'>Rerolling Magic/Rare Items</span></a><div class='collapse'><button value='table.reroll' onclick='onCollapse(this);'>-</button></div></th></tr>
     <tr><td class='tooltip k11'>3 Perfect Gems + <span class='magic'>Magic</span> Item &rarr; New Random <span class='magic'>Magic</span> Item of the same type (<span class='magic'>Grand Charms</span>)           <span class='tool ttr'>Skillers ilvl 50,<br><br>Skillers with +(41-45) Life ilvl 94<br><b>Hell</b> Baal, Diablo, Nihlathak</span></td></tr>
     <tr><td class='tooltip k22'>6 Perfect Skulls + Rare Item &rarr; Random Low Quality Rare Item of the same type (<span class='rare'>Diadems</span>)        </td></tr>
-</table>
-<br>
-<table class='head' id='table.sockcube'>
-    <tr class='gt gb'><th><span class='g'>Socketing (with Act 5 <a href='https://diablo2.diablowiki.net/Siege_on_Harrogath'>Larzuk</a>, <a href='http://classic.battle.net/diablo2exp/items/cube.shtml'>Cube</a>, or Ebug)</span><div class='collapse'><button value='table.sockcube' onclick='onCollapse(this);'>-</button></div></th></tr>
-    <tr><td class='tooltip k11'>Normal drops = max 3<span class='note'>*</span> sockets      (<span class='note'>*Cows</span> = 4 socket, <span class='note'>Larzuk</span> # sockets = ilvl &larr; mlvl &larr; alvl)</td></tr>
-    <tr><td class='tooltip k22'> nm    drops = max 4 sockets       (<span class='mf'>0</span> MF is best for finding bases)                           </td></tr>
-    <tr><td class='tooltip k11'>Hell   drops = max 6 sockets                                                                  </td></tr>
-    <tr><td class='tooltip k22'>Larzuk = max 1 socket to uniques, 1-6 sockets to white bases depending on ilvl and type       </td></tr>
-    <tr><td class='tooltip k11'>Tal + Thul + Perfect Topaz    + Normal Body Armor &rarr; Socketed Body Armor of same type          <span class='tool ttk'><span class='in'>Tal </span><img src='runes/tal.png'  /><span class='in'> + Thul </span><img src='runes/thul.png' /><span class='in'> + </span><img src='gems/topaz_perfect.png'   ></span></td></tr>
-    <tr><td class='tooltip k22'>Ral + Amn  + Perfect Amethyst + Normal Weapon     &rarr; Socketed Weapon     of same type          <span class='tool ttk'><span class='in'>Ral </span><img src='runes/ral.png'  /><span class='in'> + Amn  </span><img src='runes/amn.png'  /><span class='in'> + </span><img src='gems/amethyst_perfect.png'></span></td></tr>
-    <tr><td class='tooltip k11'>Ral + Thul + Perfect Sapphire + Normal Helm       &rarr; Socketed Helm       of same type          <span class='tool ttk'><span class='in'>Ral </span><img src='runes/ral.png'  /><span class='in'> + Thul </span><img src='runes/thul.png' /><span class='in'> + </span><img src='gems/sapphire_perfect.png'></span></td></tr>
-    <tr><td class='tooltip k22'>Tal + Amn  + Perfect Ruby     + Normal Shield     &rarr; Socketed Shield     of same type          <span class='tool ttk'><span class='in'>Tal </span><img src='runes/tal.png'  /><span class='in'> + Amn  </span><img src='runes/amn.png'  /><span class='in'> + </span><img src='gems/ruby_perfect.png'    ></span></td></tr>
-    <tr><td class='tooltip k11'>Hel + Scroll of Town Portal   + Any Socketed Item &rarr; Remove gems, runes, or jewels from sockets<span class='tool ttk'><span class='in'>Hel </span><img src='runes/hel.png'  /><span class='in'> + </span><img src='pics/scroll_town_portal.png'/></span                                 ></td></tr>
 </table>
 <br>
 <table class='head' id='table.repair'>
